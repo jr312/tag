@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div{width: 400px;height: 200px;border: 1px solid #333; }
+	.cl:after{content:"";display: block;clear:both;}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+<script src="js/tag.js"></script>
+<script>
+window.onload=function(){
+	var obj=[
+		{"name": "苹果"},
+		{"name": "梨"},
+		{"name": "桃子"},
+		{"name": "猕猴桃"},
+		{"name": "榴莲"},
+		{"name": "香蕉"},
+		{"name": "葡萄"},
+		{"name": "西瓜"},
+		{"name": "哈密瓜"},
+		{"name": "火龙果"},
+		{"name": "黑莓"},
+		{"name": "杨桃 "},
+		{"name": "椰子"},
+		{"name": "槟榔"}
+	];
+	var div=document.getElementsByTagName('div')[0];
+	viewBackground(obj,div);
+	// viewBorder(obj,div);
+}
+</script>
+</html>
